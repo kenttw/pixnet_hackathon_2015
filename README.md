@@ -21,7 +21,7 @@ pixnet_hackathon_2015
     }
 ]
 ```
-- __Example.__ 
+- __Example.__ Please make sure the order of the path is correct. (standard answer / your answer)
 ```
 >>> python score.py /path/of/the/answer.json /path/of/your/predict.json
 ```
