@@ -4,12 +4,12 @@ import json
 
 with open(sys.argv[1]) as json_file: # official
     benchmark = json.load(json_file)
-benchmark = set((each['is_spam'],each['author']) for each in benchmark)
+benchmark = set((int(each['is_spam']),each['author']) for each in benchmark)
 
 
 with open(sys.argv[2]) as json_file: # user
     predict = json.load(json_file)
-predict = set((each['is_spam'],each['author']) for each in predict)
+predict = set((int(each['is_spam']),each['author']) for each in predict)
 
 
 def compare(a,b):
@@ -30,9 +30,7 @@ def compare(a,b):
 
     print "precision is " + str(round(precision,3))
     print "recall is " + str(round(recall,3))
-    print "score: %d/%d" %(n_correct,n_total)
+    print "accuracy: %d/%d (correct/total)" %(n_correct,n_total)
 
-# python score.py /path/of/the/answer /path/of/your/predict
-# make sure the path's order is correct
 compare(benchmark,predict)
     
