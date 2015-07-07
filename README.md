@@ -14,16 +14,12 @@ pixnet_hackathon_2015
     {
         "author": "author_id",
         "is_spam": 0
-    },
-    {
-        "author": "author_id",
-        "is_spam": 0
     }
 ]
 ```
 - __Example.__ Please make sure the order of the path is correct. (standard answer / your answer)
 ```
->>> python score.py /path/of/the/answer.json /path/of/your/predict.json
+>>> python score.py /path/of/the/answer.json /path/of/your/prediction.json
 ```
 ```
 precision is 0.985
