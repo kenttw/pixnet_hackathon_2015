@@ -1,6 +1,6 @@
 # pixnet_hackathon_2015
 pixnet_hackathon_2015
-# chinese_terms
+
 
 # spam detection
 - __Performance evaluation.__ We provide score.py to evaluate the performance of your prediction.
